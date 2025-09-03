@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Simple Offline Chess — Full Rules (Click + Drag)</title>
+  <link rel="stylesheet" href="ind.css">
+</head>
+<body>
+
+<h1>Simple Offline Chess</h1>
+
+<div id="controls">
+  <label>Game Mode:</label>
+  <select id="gameMode">
+    <option value="blitz">Blitz (3 min)</option>
+    <option value="rapid">Rapid (10 min)</option>
+    <option value="normal">Normal (30 min)</option>
+  </select>
+  <button id="startBtn">Start Game</button>
+  <button id="resetBtn">Reset</button>
+</div>
+
+<div id="status">Select a mode and press Start.</div>
+
+<div id="timers">
+  White: <span id="whiteTimer">00:00</span> &nbsp;&nbsp;|&nbsp;&nbsp;
+  Black: <span id="blackTimer">00:00</span>
+</div>
+
+<div id="chessboard" role="application" aria-label="Chessboard"></div>
+
+<!-- Promotion chooser -->
+<div id="promoBackdrop">
+  <div id="promoBox">
+    <h3>Choose promotion piece</h3>
+    <div id="promoChoices"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
